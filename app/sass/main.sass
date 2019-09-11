@@ -537,6 +537,7 @@ body
 	border-radius: 5px
 	padding-top: 8px
 	padding-bottom: 8px
+	box-shadow: none
 	&:hover
 		color: #fff
 .signFooter-content__btnBlock-btn
@@ -611,6 +612,103 @@ body
 	&__text
 
 
+////////////////////////////////
+// 
+// 	SIGNUP PAGE
+// 
+////////////////////////////////
+
+// 
+// 	signUp-section
+// 
+
+.signUp-section
+	&__container
+		display: flex
+		justify-content: space-between
+
+.signUp-contentBlock
+	width: 48%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	&__logoBlock
+		&-logoLink
+			margin-bottom: 40px
+	&__titleBlock
+		margin-bottom: 30px
+		border: 3px solid #000
+		border-radius: 5px
+		padding: 15px 40px
+		&-text
+			font-size: 24px
+			font-weight: bold
+	
+	&__inputsBlock
+		&-row
+			margin-bottom: 20px
+	&__btnBlock
+		&-btn
+			width: 100%
+			color: #fff
+			margin: 0
+
+.signUpBlock
+	&-col
+		display: flex
+		flex-direction: column
+		margin-bottom: 30px
+		&__label
+			margin-bottom: 5px
+			font-size: 12px
+			color: #838383
+		&__input
+			padding: 10px 20px
+			border: 1px solid #838383
+			border-radius: 5px
+			&:hover,
+			&:active,
+			&:focus
+				outline: none
+
+
+
+.signUp-imageBlock
+	width: 48%
+	position: relative
+	&__img
+		width: 100%
+		height: auto
+
+.signUp-imageBlock__img-circle
+	position: absolute
+	width: 120px
+	height: 120px
+	background-image: url(../images/dm-accentCircle_heavy.png);
+
+.accentCircle_signUp_1
+	top: 17%
+	left: 1%
+.accentCircle_signUp_2
+	top: 67%
+	left: 19%
+.accentCircle_signUp_3
+	top: 40%
+	left: 56%
+
+
++media-breakpoint-down($xl)
+	.signUp-contentBlock__titleBlock-text
+		font-size: 20px
+	.accentCircle_signUp_1
+		top: 17%
+		left: -1%
+	.accentCircle_signUp_2
+		top: 67%
+		left: 17%
+	.accentCircle_signUp_3
+		top: 40%
+		left: 54%
 
 
 
