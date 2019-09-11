@@ -360,7 +360,7 @@ body
 .getStarted-section
 	&__container
 		padding-top: 120px
-		padding-bottom: 150px
+		padding-bottom: 30px
 
 .getStarted-title
 	margin-bottom: 30px
@@ -394,9 +394,7 @@ body
 				line-height: 1.65
 				font-weight: 500
 
-
-
-
++media-breakpoint-down($xl)
 
 
 
@@ -404,6 +402,39 @@ body
 // 
 // 	stories section
 // 
+
+.stories-section
+	background-image: url(/images/path.svg)
+	background-repeat: no-repeat
+	background-size: cover
+	color: #fff
+	&__container
+		padding-top: 120px
+		padding-bottom: 90px
+
+.successStories-title
+	padding: 0 30px
+	margin-bottom: 60px
+
+.successStories-blockItems
+	display: flex
+	justify-content: space-between
+	&-item
+		max-width: 180px
+		&__logo
+			margin-bottom: 30px
+			&-img
+				width: 100%
+				height: auto
+				max-width: 180px
+		&__textInfo
+			&-p
+		&__signatureInfo
+			color: $main-accent-color
+			font-family: "Avenir-heavy"
+
++media-breakpoint-down($xl)
+
 
 // 
 // 	partner section
