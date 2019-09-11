@@ -117,6 +117,9 @@ body
 		&-a
 			font-family: "Avenir"
 
++media-breakpoint-down($xl)
+	.topMenu__links-ul
+		margin: 0
 
 // 
 // 	Hero section
@@ -280,7 +283,75 @@ body
 .mobileSoft-section
 	background-color: $bg-dark-color
 	color: #fff
+	position: relative
 	&__container
+		display: flex
+		padding: 90px 0
+		
+
+.mobileSoft-textBlock
+	width: 45%
+	padding-right: 30px
+	&__title
+		color: $main-accent-color
+		line-height: 1.3
+	&__subTitle
+		width: 80%
+		&-a
+			color: #fff
+			text-decoration: underline
+			&:hover
+				color: #fff
+	&__iconsBlock
+
+.softBlockIcons
+	display: flex
+	&-item
+		margin: 0 15px 20px 15px 
+		display: flex
+		flex-direction: column
+		&__imgBlock
+			background-color: $main-accent-color
+			border-radius: 50%
+			width: 60px
+			height: 60px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 10px
+			&-img
+				width: 35px
+				height: auto
+		&__textBlock
+			text-align: center
+
+.softBlockIcons-item:first-child
+	margin-left: 0
+.softBlockIcons-item:last-child
+	margin-right: 0
+
+.softBlockIcons-item_heart
+.softBlockIcons-item_members
+.softBlockIcons-item_message .softBlockIcons-item__imgBlock-img
+	width: 40px
+.softBlockIcons-item_teleg
+
+.mobileSoft-imageBlock
+	width: 55%
+	&__img
+		position: absolute
+		top: -90px
+		right: 0
+		width: 100%
+		max-width: 790px
+
++media-breakpoint-down($xl)
+	.mobileSoft-section__container
+		padding: 60px 0
+	.mobileSoft-imageBlock__img
+		max-width: 680px
+
+
 
 // 
 // 	getStarted section
