@@ -117,6 +117,9 @@ body
 		&-a
 			font-family: "Avenir"
 
+.topMenu__buttons>a:last-child
+	margin-right: 0
+
 +media-breakpoint-down($xl)
 	.topMenu__links-ul
 		margin: 0
@@ -164,11 +167,11 @@ body
 	background-repeat: no-repeat
 	z-index: 2
 	&_hero_1
-		top: 296px
-		right: 330px
+		top: 44%
+		right: 25%
 	&_hero_2
-		top: 526px
-		right: 52px
+		top: 75%
+		right: 3%
 
 
 
@@ -181,11 +184,19 @@ body
 		width: 200px
 		height: 200px
 	.accentCircle_hero_1
-		top: 223px
-		right: 246px
+		top: 44%
+		right: 27%
 	.accentCircle_hero_2
-		top: 396px
-		right: 35px
+		top: 75%
+		right: 4%
+
+@media (min-width: 1400px)
+	.accentCircle_hero_1
+		top: 44%
+		right: 23%
+	.accentCircle_hero_2
+		top: 75%
+		right: 3%
 
 // 
 // 	numbersGame section
@@ -277,6 +288,18 @@ body
 		font-size: 40px
 		line-height: normal
 
+@media (min-width: 1400px)
+	.numbersGameSect-imageBlock__img
+		width: 100%
+	.accentCircle_numGeme_1
+		top: 24%
+		left: 6%
+	.accentCircle_numGeme_2
+		top: 64%
+		left: 46%
+	.accentCircle_numGeme_3
+		top: 34%
+		left: 76%
 // 
 // 	mobileSoft section
 // 
@@ -284,16 +307,16 @@ body
 	background-color: $bg-dark-color
 	color: #fff
 	position: relative
-	// &:after
-	// 	position: absolute
-	// 	top: 0
-	// 	right: 50%
-	// 	z-index: 99
-	// 	content: ''
-	// 	display: block
-	// 	width: 1px
-	// 	height: 400px
-	// 	background-color: red
+	&:after
+		position: absolute
+		top: 0
+		right: 50%
+		z-index: 99
+		content: ''
+		display: block
+		width: 1px
+		height: 400px
+		background-color: red
 
 	&__container
 		display: flex
@@ -364,6 +387,18 @@ body
 	.mobileSoft-imageBlock__img
 		max-width: 680px
 
+@media (min-width: 1400px)
+	.mobileSoft-textBlock
+		width: 43%
+	.mobileSoft-imageBlock
+		width: 57%
+	.mobileSoft-imageBlock
+		position: relative
+	.mobileSoft-imageBlock__img
+		width: 800px
+		top: -170px
+		left: -50px
+
 
 
 // 
@@ -388,7 +423,7 @@ body
 		display: flex
 		flex-direction: column
 		align-items: center
-		max-width: 260px
+		max-width: 270px
 		&__imgBlock
 			margin-bottom: 20px
 			&-img
@@ -596,9 +631,15 @@ body
 	display: flex
 	justify-content: space-between
 	align-items: center
-	padding: 90px 0 60px 0
+	padding: 100px 0 90px 0
+	&__imageLink
+		&-img
+			width: 100%
+			max-width: 350px
+			height: auto
 	&__logoBlock
-		display: flex
+		display: none
+		//display: flex
 		color: #fff
 		font-family: "Avenir-i"
 		font-weight: bold
@@ -700,7 +741,7 @@ body
 		margin-bottom: 30px
 		&__label
 			margin-bottom: 5px
-			font-size: 12px
+			font-size: 17px
 			color: #838383
 		&__input
 			padding: 10px 20px
