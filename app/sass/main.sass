@@ -173,7 +173,23 @@ body
 		top: 75%
 		right: 3%
 
+.accentBorder
+	display: block
+	width: 276px
+	height: 276px
+	border-radius: 50%
+	border: 13px solid $main-accent-color
+	z-index: 2
+	position: absolute
 
+.accentBorder_hero_1
+	top: 300px
+	right: 326px
+.accentBorder_hero_2
+	top: 515px
+	right: 43px
+
+	
 
 +media-breakpoint-down($xl)
 	.heroSection-textBlock
@@ -189,6 +205,15 @@ body
 	.accentCircle_hero_2
 		top: 75%
 		right: 4%
+	.accentBorder
+		width: 222px
+		height: 222px
+	.accentBorder_hero_1
+		top: 216px
+		right: 242px
+	.accentBorder_hero_2
+		top: 380px
+		right: 26px
 
 @media (min-width: 1400px)
 	.accentCircle_hero_1
@@ -219,29 +244,34 @@ body
 			width: 80px
 			height: 80px
 			position: absolute
-			
-.accentCircle_numGeme_1
-	top: 24%
-	left: 7%
-.accentCircle_numGeme_2
-	top: 64%
-	left: 52%
-.accentCircle_numGeme_3
-	top: 34%
-	left: 85%
+
+.accentBorder_numberSect
+	width: 80px
+	height: 80px
+	border: 8px solid $main-accent-color
+.accentBorder_numberSect_1
+	top: 23%
+	left: 6%
+.accentBorder_numberSect_2
+	top: 63%
+	left: 46%
+.accentBorder_numberSect_3
+	top: 33%
+	left: 76%
+	
 +media-breakpoint-down($xl)
 	.numbersGameSect-imageBlock__img-circle
 		width: 60px
 		height: 60px
-	.accentCircle_numGeme_1
-		top: 25%
-		left: 8%
-	.accentCircle_numGeme_2
-		top: 65%
-		left: 53%
-	.accentCircle_numGeme_3
-		top: 35%
-		left: 85%
+	.accentBorder_numberSect_1
+		top: 22%
+		left: 6%
+	.accentBorder_numberSect_2
+		top: 62%
+		left: 49%
+	.accentBorder_numberSect_3
+		top: 32%
+		left: 83%
 
 .numbersGameSect-textBlock
 	display: flex
@@ -683,9 +713,24 @@ body
 	&__title
 		margin-bottom: 10px
 	&__inputText
-		padding: 4px 8px
+		padding: 6px 8px
 		&::placeholder
-			color: #000
+			color: #ccc
+
+.subscribeBlock__inputContainer
+	position: relative
+.subscribeBlock__inputText
+	padding-right: 90px
+.subscribeBlock__inputSubmit
+	border: none
+	background-color: $main-accent-color
+	text-transform: uppercase
+	font-weight: bold
+	position: absolute
+	padding: 4px 10px
+	right: 4px
+	top: 4px
+
 
 .footerCopyright
 	font-size: 12px
@@ -769,29 +814,32 @@ body
 	height: 150px
 	background-image: url(../images/dm-accentCircle_heavy.png);
 
-.accentCircle_signUp_1
+.accentBorder_signUpPage
+	width: 140px
+	height: 140px
+	border: 8px solid $main-accent-color
+.accentBorder_signUpPage_1
 	top: 17%
-	left: 1%
-.accentCircle_signUp_2
+	left: 2%
+.accentBorder_signUpPage_2
 	top: 68%
-	left: 24%
-.accentCircle_signUp_3
+	left: 23%
+.accentBorder_signUpPage_3
 	top: 40%
-	left: 69%
-
+	left: 66%
 
 +media-breakpoint-down($xl)
 	.signUp-contentBlock__titleBlock-text
 		font-size: 20px
-	.accentCircle_signUp_1
-		top: 17%
+	.accentBorder_signUpPage_1
+		top: 18%
 		left: 2%
-	.accentCircle_signUp_2
-		top: 67%
+	.accentBorder_signUpPage_2
+		top: 68%
 		left: 29%
-	.accentCircle_signUp_3
+	.accentBorder_signUpPage_3
 		top: 40%
-		left: 82%
+		left: 83%
 
 
 
